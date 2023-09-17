@@ -1,0 +1,183 @@
+/* Reset and basic styling */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    /* background: #F8F8F8; */
+    background-color: #dde1e7;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Chat section styling */
+section.chat_section {
+    width: 650px;
+    max-width: 90%;
+    background: #fff;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border-top-right-radius: 30px;
+}
+
+/* Chat header styling */
+.code {
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #444;
+    margin-left: 15%;
+    position: absolute;
+    top:6px;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+/* Message area styling */
+.message_area {
+    /* background: #787986; */
+    top: 12px;
+    height: 600px;
+    width: 100%;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll; /* Use scroll instead of hidden */
+    padding-bottom: 0px;
+}
+
+/* Hide the scrollbar while still allowing scrolling */
+.message_area::-webkit-scrollbar {
+    width: 0;/* Adjust as needed */
+    background-color: transparent;
+}
+
+/* Textarea styling */
+textarea {
+    margin-top: 300px;
+    left: 33.65%;
+    width: 42.3%;
+    padding: 8px;
+    font-size: 16px;
+    outline:none;
+    box-sizing: border-box;
+    border: none;
+    position: absolute;
+    background: #c8c6c6;
+    border-bottom-right-radius: 33px;
+
+}
+textarea::placeholder {
+    padding-left: 50px;
+    padding-top: 12px;
+    color: #787986;
+    font-style: italic;
+}
+/* Message styling */
+.message {
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 40px;
+    max-width: 300px;
+    position: relative;
+}
+
+/* Incoming message styling */
+.message.incoming {
+    align-self: flex-start;
+    background: #5e93a2;
+    border-radius: 25px;
+    color: #fff;
+}
+
+/* Outgoing message styling */
+.message.outgoing {
+    align-self: flex-end;
+    background: #c7c7c9;
+    color: #787986;
+    border-radius: 25px;
+    width: min-content;
+}
+
+/* Center-aligned system message */
+.message.system-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FF5733; /* Change this color to your desired color */
+    font-style: italic;
+}
+
+/* Reset margin for text content inside message divs */
+.message p {
+    margin: 0;
+    word-wrap: break-word; /* This property wraps long words onto the next line */
+}
+.navbar {
+    background: #282626;
+    height: 653px;
+    width: 147px;
+    margin-top: 53px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.icon{
+    background: white;
+    height: 50px;
+    width:50px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 10px;
+}
+
+.nav-item ul {
+    color: white;
+    list-style: none;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center;
+    align-items: center; /* Center items horizontally */
+    margin-top: 50px;
+    /* background-color: red; */
+}
+.nav-item ul2 {
+    color: white;
+    list-style: none;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center;
+    align-items: center; /* Center items horizontally */
+    margin-top: 10px;
+    /* background-color: red; */
+}
+.nav-item ul2 li{
+    font-size: 14px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.nav-item ul li{
+    font-size: 14px;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+.h{
+    font-size: 18px;
+    color: #747373;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center;
+    align-items: center; /* Center items horizontally */
+}
+.h:hover{
+    color: white;
+}

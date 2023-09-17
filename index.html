@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/23d989e400.js" crossorigin="anonymous"></script>
+    <title>Chat Box</title>
+    <link rel="stylesheet" href="/public/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <img src="" alt="" class="icon">
+        <div class="nav-item">
+            <ul>
+                <li><i class="fa-solid fa-house h"></i><br>Home</li>
+                <li><i class="fa-solid fa-paper-plane h"></i><br>Chat</li>
+                <li><i class="fa-solid fa-user-group h"></i><br>Groups</li>
+                <li><i class="fa-solid fa-cloud h"></i><br>Cloud box</li>
+                <li><i class="fa-solid fa-bell h "></i><br>Notifications</li>
+                <li><i class="fa-solid fa-ellipsis h"></i><br>More</li>
+            </ul>
+            <ul2>
+                <li><i class="fa-solid fa-gear h"></i><br>Setting</li>
+            </ul2>
+        </div>
+    </nav>
+    <section class="chat_section">
+        <div class="code">
+            <!-- <img src="" alt="Insert and Image" srcset=""> -->
+            <h1>Slate</h1>
+        </div>
+        <div class="message_area">
+            <!-- Messages will be added here -->
+        </div>
+    </section>
+    <div class="textarea_container">
+        <textarea id="textarea" cols=" " rows=" " placeholder="Type a message..."></textarea>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/public/client.js"></script>
+</body>
+</html>
